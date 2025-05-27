@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İdman Xəbərləri - Xəbərlər</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="category-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">Xəbərlər</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                    <a href="news.html" class="nav-link">Xəbərlər</a>
+                    <a href="category-technology.html" class="nav-link">Texnologiya</a>
+                    <a href="category-economy.html" class="nav-link">İqtisadiyyat</a>
+                    <a href="category-sports.html" class="nav-link active">İdman</a>
+                    <a href="category-culture.html" class="nav-link">Mədəniyyət</a>
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                    <a href="contact.html" class="nav-link">Əlaqə</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <button class="icon-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Ana səhifə</a>
+            <a href="news.html" class="mobile-nav-link">Xəbərlər</a>
+            <a href="category-technology.html" class="mobile-nav-link">Texnologiya</a>
+            <a href="category-economy.html" class="mobile-nav-link">İqtisadiyyat</a>
+            <a href="category-sports.html" class="mobile-nav-link">İdman</a>
+            <a href="category-culture.html" class="mobile-nav-link">Mədəniyyət</a>
+            <a href="about.html" class="mobile-nav-link">Haqqımızda</a>
+            <a href="contact.html" class="mobile-nav-link">Əlaqə</a>
+        </div>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero sports-hero">
+        <div class="container">
+            <div class="category-hero-content">
+                <div class="category-icon">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <h1 class="category-title">İdman</h1>
+                <p class="category-description">Futbol, olimpiya idman növləri və milli komandalarımızın uğurları haqqında xəbərlər</p>
+                <div class="category-stats">
+                    <span class="stat-item">
+                        <i class="fas fa-newspaper"></i>
+                        <span>189 məqalə</span>
+                    </span>
+                    <span class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span>3.1M baxış</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Scores -->
+    <section class="live-scores">
+        <div class="container">
+            <h2 class="section-title">Canlı Nəticələr</h2>
+            <div class="scores-grid">
+                <div class="score-card">
+                    <div class="match-info">
+                        <span class="match-time">90+3'</span>
+                        <span class="match-status live">CANLI</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team">
+                            <span class="team-name">Qarabağ</span>
+                            <span class="team-score">2</span>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <span class="team-score">1</span>
+                            <span class="team-name">Neftçi</span>
+                        </div>
+                    </div>
+                    <div class="match-league">Azərbaycan Premyer Liqası</div>
+                </div>
+
+                <div class="score-card">
+                    <div class="match-info">
+                        <span class="match-time">75'</span>
+                        <span class="match-status live">CANLI</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team">
+                            <span class="team-name">Sumqayıt</span>
+                            <span class="team-score">0</span>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <span class="team-score">1</span>
+                            <span class="team-name">Zirə</span>
+                        </div>
+                    </div>
+                    <div class="match-league">Azərbaycan Premyer Liqası</div>
+                </div>
+
+                <div class="score-card">
+                    <div class="match-info">
+                        <span class="match-time">Bitdi</span>
+                        <span class="match-status finished">BİTDİ</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team">
+                            <span class="team-name">Real Madrid</span>
+                            <span class="team-score">3</span>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <span class="team-score">1</span>
+                            <span class="team-name">Barcelona</span>
+                        </div>
+                    </div>
+                    <div class="match-league">La Liga</div>
+                </div>
+
+                <div class="score-card">
+                    <div class="match-info">
+                        <span class="match-time">20:00</span>
+                        <span class="match-status upcoming">GƏLƏCƏK</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team">
+                            <span class="team-name">Arsenal</span>
+                            <span class="team-score">-</span>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <span class="team-score">-</span>
+                            <span class="team-name">Chelsea</span>
+                        </div>
+                    </div>
+                    <div class="match-league">Premier League</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Seçilmiş Məqalə</h2>
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="https://via.placeholder.com/800x400/F59E0B/FFFFFF?text=Football+Championship" alt="Futbol Çempionatı">
+                    <span class="featured-badge">Xüsusi</span>
+                </div>
+                <div class="featured-content">
+                    <span class="featured-category">Futbol</span>
+                    <h3 class="featured-title">Qarabağ FK Avropa Liqasında tarixi uğur qazandı</h3>
+                    <p class="featured-excerpt">Azərbaycan təmsilçisi Qarabağ FK Avropa Liqasının qrup mərhələsində göstərdiyi oyunla tamaşaçıları heyran etdi və növbəti mərhələyə keçmək şansını artırdı. Komanda bu mövsüm Avropa arenasında ən yaxşı nəticələrindən birini nümayiş etdirir.</p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-user"></i> Rəşad Əliyev</span>
+                        <span><i class="fas fa-calendar"></i> 2024-01-20</span>
+                        <span><i class="fas fa-clock"></i> 6 dəq</span>
+                    </div>
+                    <a href="article.html" class="btn btn-primary">Tam məqaləni oxu</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sports News Grid -->
+    <section class="category-news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">İdman Xəbərləri</h2>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="latest">Ən yenilər</option>
+                        <option value="popular">Ən populyarlar</option>
+                        <option value="trending">Trend olanlar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="news-grid-large">
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/DC2626/FFFFFF?text=National+Team" alt="Milli Komanda">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Milli Komanda</span>
+                            <span class="news-date">2024-01-19</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan milli komandası yeni heyətini açıqladı</h3>
+                        <p class="news-excerpt">Milli komandanın baş məşqçisi növbəti oyunlar üçün 25 nəfərlik heyəti açıqlayıb. Siyahıya bir neçə gənc futbolçu da daxil edilib.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Orxan Bayramov</span>
+                            <span><i class="fas fa-clock"></i> 4 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/7C3AED/FFFFFF?text=Olympics" alt="Olimpiya">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Olimpiya İdmanı</span>
+                            <span class="news-date">2024-01-18</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan güləşçiləri dünya çempionatına hazırlaşır</h3>
+                        <p class="news-excerpt">Milli güləş komandamız dünya çempionatında ölkəmizi layiqincə təmsil etmək üçün intensiv məşqlər keçirir.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Günel Qasımova</span>
+                            <span><i class="fas fa-clock"></i> 5 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/059669/FFFFFF?text=Basketball" alt="Basketbol">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Basketbol</span>
+                            <span class="news-date">2024-01-17</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan basketbol liqasında yeni mövsüm başladı</h3>
+                        <p class="news-excerpt">Ölkə basketbol liqasının yeni mövsümü start götürüb. Bu il liqaya yeni komandalar da qoşulub.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Dr. Nigar Əhmədova</span>
+                            <span><i class="fas fa-clock"></i> 3 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/0891B2/FFFFFF?text=Swimming" alt="Üzgüçülük">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Üzgüçülük</span>
+                            <span class="news-date">2024-01-16</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan üzgüçüləri beynəlxalq yarışda medal qazandı</h3>
+                        <p class="news-excerpt">Milli üzgüçülük komandamız beynəlxalq yarışda uğurlu çıxış edərək bir neçə medal qazanıb.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Əli Məmmədov</span>
+                            <span><i class="fas fa-clock"></i> 4 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/16A34A/FFFFFF?text=Tennis" alt="Tennis">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Tennis</span>
+                            <span class="news-date">2024-01-15</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan tennisçiləri ATP turnirində iştirak edir</h3>
+                        <p class="news-excerpt">Ölkəmizin tennis üzrə milli komanda üzvləri beynəlxalq ATP turnirində ölkəmizi təmsil edirlər.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Leyla Həsənova</span>
+                            <span><i class="fas fa-clock"></i> 6 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/EA580C/FFFFFF?text=Boxing" alt="Boks">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Boks</span>
+                            <span class="news-date">2024-01-14</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan boksçuları dünya çempionatında</h3>
+                        <p class="news-excerpt">Milli boks komandamız dünya çempionatında iştirak edəcək və medal uğrunda mübarizə aparacaq.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Rəşad Əliyev</span>
+                            <span><i class="fas fa-clock"></i> 5 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn btn-outline btn-large">Daha çox məqalə yüklə</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Categories -->
+    <section class="sports-categories">
+        <div class="container">
+            <h2 class="section-title">İdman Növləri</h2>
+            <div class="categories-grid">
+                <div class="sport-card">
+                    <div class="sport-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="sport-title">Futbol</h3>
+                    <p class="sport-description">Yerli və beynəlxalq futbol xəbərləri</p>
+                    <span class="sport-count">67 məqalə</span>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="sport-title">Atletika</h3>
+                    <p class="sport-description">Yüngül atletika yarışları və rekordlar</p>
+                    <span class="sport-count">34 məqalə</span>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">
+                        <i class="fas fa-swimmer"></i>
+                    </div>
+                    <h3 class="sport-title">Üzgüçülük</h3>
+                    <p class="sport-description">Su idman növləri və yarışlar</p>
+                    <span class="sport-count">28 məqalə</span>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3 class="sport-title">Döyüş İdmanları</h3>
+                    <p class="sport-description">Boks, güləş və digər döyüş idmanları</p>
+                    <span class="sport-count">31 məqalə</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">X</div>
+                        <span class="logo-text">Xəbərlər</span>
+                    </div>
+                    <p class="footer-description">Azərbaycanın aparıcı xəbər portalı. Etibarlı və operativ xəbər mənbəyiniz.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Kateqoriyalar</h3>
+                    <ul class="footer-links">
+                        <li><a href="category-technology.html">Texnologiya</a></li>
+                        <li><a href="category-economy.html">İqtisadiyyat</a></li>
+                        <li><a href="category-sports.html">İdman</a></li>
+                        <li><a href="category-culture.html">Mədəniyyət</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Şirkət</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="#">Komandamız</a></li>
+                        <li><a href="#">Karyera</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbər Bülleteni</h3>
+                    <p class="newsletter-description">İdman xəbərlərini e-poçt ünvanınıza göndərək</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-poçt ünvanınız" class="newsletter-input">
+                        <button class="btn btn-primary">Abunə ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Xəbərlər. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

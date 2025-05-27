@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə - Xəbərlər</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">Xəbərlər</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                    <a href="news.html" class="nav-link">Xəbərlər</a>
+                    <a href="category-technology.html" class="nav-link">Texnologiya</a>
+                    <a href="category-economy.html" class="nav-link">İqtisadiyyat</a>
+                    <a href="category-sports.html" class="nav-link active">İdman</a>
+                    <a href="category-culture.html" class="nav-link">Mədəniyyət</a>
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                    <a href="contact.html" class="nav-link">Əlaqə</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <button class="icon-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Ana səhifə</a>
+            <a href="news.html" class="mobile-nav-link">Xəbərlər</a>
+            <a href="#" class="mobile-nav-link">Texnologiya</a>
+            <a href="#" class="mobile-nav-link">İqtisadiyyat</a>
+            <a href="#" class="mobile-nav-link">İdman</a>
+            <a href="#" class="mobile-nav-link">Mədəniyyət</a>
+            <a href="about.html" class="mobile-nav-link">Haqqımızda</a>
+            <a href="contact.html" class="mobile-nav-link">Əlaqə</a>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main class="contact-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Əlaqə</h1>
+                <p class="page-description">Bizimlə əlaqə saxlayın. Suallarınız, təklifləriniz və ya rəyləriniz varsa, bizə yazmaqdan çəkinməyin.</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-card">
+                        <h2 class="form-title">Bizə yazın</h2>
+                        <p class="form-description">Formu doldurun və ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Ad</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Adınız" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Soyad</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Soyadınız" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-poçt</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+994 XX XXX XX XX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Mövzu</label>
+                                <input type="text" id="subject" name="subject" placeholder="Mesajınızın mövzusu" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın..." rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Mesajı göndər</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <!-- Contact Details -->
+                    <div class="info-card">
+                        <h3 class="info-title">Əlaqə məlumatları</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>E-poçt</h4>
+                                <p>info@xeberler.az</p>
+                                <p>redaksiya@xeberler.az</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefon</h4>
+                                <p>+994 12 555 55 55</p>
+                                <p>+994 50 555 55 55</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ünvan</h4>
+                                <p>Nizami küçəsi 123<br>Bakı, Azərbaycan AZ1000</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>İş saatları</h4>
+                                <p>Bazar ertəsi - Cümə: 09:00 - 18:00</p>
+                                <p>Şənbə: 10:00 - 16:00</p>
+                                <p>Bazar: Bağlı</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="info-card">
+                        <h3 class="info-title">Tez-tez verilən suallar</h3>
+                        
+                        <div class="faq-item">
+                            <h4 class="faq-question">Xəbər göndərmək üçün necə əlaqə saxlaya bilərəm?</h4>
+                            <p class="faq-answer">Xəbər göndərmək üçün redaksiya@xeberler.az ünvanına yazın.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4 class="faq-question">Reklam yerləşdirmək mümkündürmü?</h4>
+                            <p class="faq-answer">Reklam məsələləri üçün reklam@xeberler.az ünvanına müraciət edin.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4 class="faq-question">Texniki problemlər üçün kimə müraciət edim?</h4>
+                            <p class="faq-answer">Texniki dəstək üçün destek@xeberler.az ünvanından bizə yazın.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">X</div>
+                        <span class="logo-text">Xəbərlər</span>
+                    </div>
+                    <p class="footer-description">Azərbaycanın aparıcı xəbər portalı. Etibarlı və operativ xəbər mənbəyiniz.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbərlər</h3>
+                    <ul class="footer-links">
+                        <li><a href="news.html">Son xəbərlər</a></li>
+                        <li><a href="#">Texnologiya</a></li>
+                        <li><a href="#">İqtisadiyyat</a></li>
+                        <li><a href="#">İdman</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Şirkət</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="#">Komandamız</a></li>
+                        <li><a href="#">Karyera</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbər Bülleteni</h3>
+                    <p class="newsletter-description">Ən son xəbərləri e-poçt ünvanınıza göndərək</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-poçt ünvanınız" class="newsletter-input">
+                        <button class="btn btn-primary">Abunə ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Xəbərlər. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə - Xəbərlər</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">Xəbərlər</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                    <a href="news.html" class="nav-link">Xəbərlər</a>
+                    <a href="#" class="nav-link">Texnologiya</a>
+                    <a href="#" class="nav-link">İqtisadiyyat</a>
+                    <a href="#" class="nav-link">İdman</a>
+                    <a href="#" class="nav-link">Mədəniyyət</a>
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                    <a href="contact.html" class="nav-link active">Əlaqə</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <button class="icon-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Ana səhifə</a>
+            <a href="news.html" class="mobile-nav-link">Xəbərlər</a>
+            <a href="#" class="mobile-nav-link">Texnologiya</a>
+            <a href="#" class="mobile-nav-link">İqtisadiyyat</a>
+            <a href="#" class="mobile-nav-link">İdman</a>
+            <a href="#" class="mobile-nav-link">Mədəniyyət</a>
+            <a href="about.html" class="mobile-nav-link">Haqqımızda</a>
+            <a href="contact.html" class="mobile-nav-link">Əlaqə</a>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main class="contact-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Əlaqə</h1>
+                <p class="page-description">Bizimlə əlaqə saxlayın. Suallarınız, təklifləriniz və ya rəyləriniz varsa, bizə yazmaqdan çəkinməyin.</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-card">
+                        <h2 class="form-title">Bizə yazın</h2>
+                        <p class="form-description">Formu doldurun və ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Ad</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Adınız" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Soyad</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Soyadınız" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-poçt</label>
+                                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+994 XX XXX XX XX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Mövzu</label>
+                                <input type="text" id="subject" name="subject" placeholder="Mesajınızın mövzusu" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mesaj</label>
+                                <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın..." rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">Mesajı göndər</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <!-- Contact Details -->
+                    <div class="info-card">
+                        <h3 class="info-title">Əlaqə məlumatları</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>E-poçt</h4>
+                                <p>info@xeberler.az</p>
+                                <p>redaksiya@xeberler.az</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefon</h4>
+                                <p>+994 12 555 55 55</p>
+                                <p>+994 50 555 55 55</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Ünvan</h4>
+                                <p>Nizami küçəsi 123<br>Bakı, Azərbaycan AZ1000</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>İş saatları</h4>
+                                <p>Bazar ertəsi - Cümə: 09:00 - 18:00</p>
+                                <p>Şənbə: 10:00 - 16:00</p>
+                                <p>Bazar: Bağlı</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="info-card">
+                        <h3 class="info-title">Tez-tez verilən suallar</h3>
+                        
+                        <div class="faq-item">
+                            <h4 class="faq-question">Xəbər göndərmək üçün necə əlaqə saxlaya bilərəm?</h4>
+                            <p class="faq-answer">Xəbər göndərmək üçün redaksiya@xeberler.az ünvanına yazın.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4 class="faq-question">Reklam yerləşdirmək mümkündürmü?</h4>
+                            <p class="faq-answer">Reklam məsələləri üçün reklam@xeberler.az ünvanına müraciət edin.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4 class="faq-question">Texniki problemlər üçün kimə müraciət edim?</h4>
+                            <p class="faq-answer">Texniki dəstək üçün destek@xeberler.az ünvanından bizə yazın.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">X</div>
+                        <span class="logo-text">Xəbərlər</span>
+                    </div>
+                    <p class="footer-description">Azərbaycanın aparıcı xəbər portalı. Etibarlı və operativ xəbər mənbəyiniz.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbərlər</h3>
+                    <ul class="footer-links">
+                        <li><a href="news.html">Son xəbərlər</a></li>
+                        <li><a href="#">Texnologiya</a></li>
+                        <li><a href="#">İqtisadiyyat</a></li>
+                        <li><a href="#">İdman</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Şirkət</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="#">Komandamız</a></li>
+                        <li><a href="#">Karyera</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbər Bülleteni</h3>
+                    <p class="newsletter-description">Ən son xəbərləri e-poçt ünvanınıza göndərək</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-poçt ünvanınız" class="newsletter-input">
+                        <button class="btn btn-primary">Abunə ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Xəbərlər. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildirişlər - Xəbərlər</title>
+    <link rel="stylesheet" href="notification-styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">Xəbərlər</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                    <a href="news.html" class="nav-link">Xəbərlər</a>
+                    <a href="category-technology.html" class="nav-link">Texnologiya</a>
+                    <a href="category-economy.html" class="nav-link">İqtisadiyyat</a>
+                    <a href="category-sports.html" class="nav-link">İdman</a>
+                    <a href="category-culture.html" class="nav-link">Mədəniyyət</a>
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                    <a href="contact.html" class="nav-link">Əlaqə</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <button class="icon-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Ana səhifə</a>
+            <a href="news.html" class="mobile-nav-link">Xəbərlər</a>
+            <a href="category-technology.html" class="mobile-nav-link">Texnologiya</a>
+            <a href="category-economy.html" class="mobile-nav-link">İqtisadiyyat</a>
+            <a href="category-sports.html" class="mobile-nav-link">İdman</a>
+            <a href="category-culture.html" class="mobile-nav-link">Mədəniyyət</a>
+            <a href="about.html" class="mobile-nav-link">Haqqımızda</a>
+            <a href="contact.html" class="mobile-nav-link">Əlaqə</a>
+        </div>
+    </header>
+
+    <!-- Notifications Page -->
+    <main class="notifications-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Ana səhifə</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span>Bildirişlər</span>
+                </div>
+                <h1 class="page-title">Bildirişlər</h1>
+                <p class="page-description">Bütün bildirişlərinizi burada görə bilərsiniz</p>
+            </div>
+
+            <!-- Notifications Controls -->
+            <div class="notifications-controls">
+                <div class="controls-left">
+                    <div class="notification-stats">
+                        <span class="stat-item">
+                            <i class="fas fa-bell"></i>
+                            <span>Ümumi: <strong>24</strong></span>
+                        </span>
+                        <span class="stat-item">
+                            <i class="fas fa-circle text-blue"></i>
+                            <span>Oxunmamış: <strong>8</strong></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="controls-right">
+                    <div class="notification-filters">
+                        <select class="filter-select" id="categoryFilter">
+                            <option value="all">Bütün kateqoriyalar</option>
+                            <option value="news">Xəbərlər</option>
+                            <option value="sports">İdman</option>
+                            <option value="economy">İqtisadiyyat</option>
+                            <option value="culture">Mədəniyyət</option>
+                            <option value="technology">Texnologiya</option>
+                        </select>
+                        <select class="filter-select" id="statusFilter">
+                            <option value="all">Bütün bildirişlər</option>
+                            <option value="unread">Oxunmamış</option>
+                            <option value="read">Oxunmuş</option>
+                        </select>
+                    </div>
+                    <div class="notification-actions">
+                        <button class="btn btn-outline" id="markAllRead">
+                            <i class="fas fa-check-double"></i>
+                            Hamısını oxunmuş et
+                        </button>
+                        <button class="btn btn-outline" id="deleteSelected">
+                            <i class="fas fa-trash"></i>
+                            Seçilənləri sil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notifications List -->
+            <div class="notifications-container">
+                <div class="notifications-list-page">
+                    <!-- Today's Notifications -->
+                    <div class="notification-group">
+                        <h3 class="group-title">Bu gün</h3>
+                        
+                        <div class="notification-item-page unread" data-category="technology" data-id="1">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-1">
+                                <label for="notif-1"></label>
+                            </div>
+                            <div class="notification-icon tech">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Yeni texnologiya məqaləsi dərc edildi</h4>
+                                    <span class="notification-time-page">5 dəq əvvəl</span>
+                                </div>
+                                <p class="notification-text-page">Süni intellekt sahəsində yeni araşdırma nəticələri açıqlandı. Bu sahədə ən son inkişaflar haqqında ətraflı məlumat.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category tech">Texnologiya</span>
+                                    <a href="article.html" class="notification-link">Məqaləni oxu</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item-page unread" data-category="sports" data-id="2">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-2">
+                                <label for="notif-2"></label>
+                            </div>
+                            <div class="notification-icon sports">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Qarabağ FK oyunu başladı</h4>
+                                    <span class="notification-time-page">15 dəq əvvəl</span>
+                                </div>
+                                <p class="notification-text-page">Qarabağ FK - Neftçi PFK oyunu başladı. Canlı nəticələri izləyin.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category sports">İdman</span>
+                                    <a href="category-sports.html" class="notification-link">Canlı izlə</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item-page unread" data-category="economy" data-id="3">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-3">
+                                <label for="notif-3"></label>
+                            </div>
+                            <div class="notification-icon economy">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Yeni iqtisadi göstəricilər açıqlandı</h4>
+                                    <span class="notification-time-page">1 saat əvvəl</span>
+                                </div>
+                                <p class="notification-text-page">Azərbaycan iqtisadiyyatının yanvar ayı göstəriciləri dövlət statistika komitəsi tərəfindən açıqlandı.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category economy">İqtisadiyyat</span>
+                                    <a href="category-economy.html" class="notification-link">Ətraflı oxu</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item-page read" data-category="culture" data-id="4">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-4">
+                                <label for="notif-4"></label>
+                            </div>
+                            <div class="notification-icon culture">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Yeni sərgi açıldı</h4>
+                                    <span class="notification-time-page">2 saat əvvəl</span>
+                                </div>
+                                <p class="notification-text-page">YARAT mərkəzində müasir incəsənət sərgisi açıldı. Gənc rəssamların əsərləri nümayiş etdirilir.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category culture">Mədəniyyət</span>
+                                    <a href="category-culture.html" class="notification-link">Sərgini gör</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yesterday's Notifications -->
+                    <div class="notification-group">
+                        <h3 class="group-title">Dünən</h3>
+                        
+                        <div class="notification-item-page read" data-category="news" data-id="5">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-5">
+                                <label for="notif-5"></label>
+                            </div>
+                            <div class="notification-icon news">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Xəbər bülleteni göndərildi</h4>
+                                    <span class="notification-time-page">Dünən 18:00</span>
+                                </div>
+                                <p class="notification-text-page">Həftəlik xəbər bülleteni e-poçt ünvanınıza göndərildi. Ən vacib xəbərləri buradan oxuya bilərsiniz.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category news">Xəbərlər</span>
+                                    <a href="news.html" class="notification-link">Bülleteni oxu</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item-page unread" data-category="sports" data-id="6">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-6">
+                                <label for="notif-6"></label>
+                            </div>
+                            <div class="notification-icon sports">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Azərbaycan idmançısı medal qazandı</h4>
+                                    <span class="notification-time-page">Dünən 14:30</span>
+                                </div>
+                                <p class="notification-text-page">Beynəlxalq yarışda ölkəmizi təmsil edən idmançı qızıl medal qazanaraq tarixi uğur əldə etdi.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category sports">İdman</span>
+                                    <a href="article.html" class="notification-link">Uğuru oxu</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- This Week's Notifications -->
+                    <div class="notification-group">
+                        <h3 class="group-title">Bu həftə</h3>
+                        
+                        <div class="notification-item-page read" data-category="technology" data-id="7">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-7">
+                                <label for="notif-7"></label>
+                            </div>
+                            <div class="notification-icon tech">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">AI sahəsində yeni inkişaf</h4>
+                                    <span class="notification-time-page">3 gün əvvəl</span>
+                                </div>
+                                <p class="notification-text-page">ChatGPT-nin yeni versiyası təqdim edildi. Bu versiyada bir çox yenilik və təkmilləşdirmə var.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category tech">Texnologiya</span>
+                                    <a href="article.html" class="notification-link">Yeniliyi öyrən</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="notification-item-page unread" data-category="economy" data-id="8">
+                            <div class="notification-checkbox">
+                                <input type="checkbox" id="notif-8">
+                                <label for="notif-8"></label>
+                            </div>
+                            <div class="notification-icon economy">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="notification-content-page">
+                                <div class="notification-header-page">
+                                    <h4 class="notification-title-page">Valyuta məzənnələri dəyişdi</h4>
+                                    <span class="notification-time-page">4 gün əvvəl</span>
+                                </div>
+                                <p class="notification-text-page">Mərkəzi Bank tərəfindən yeni valyuta məzənnələri açıqlandı. Dollar və avro məzənnələrində dəyişiklik var.</p>
+                                <div class="notification-meta-page">
+                                    <span class="notification-category economy">İqtisadiyyat</span>
+                                    <a href="category-economy.html" class="notification-link">Məzənnələri gör</a>
+                                </div>
+                            </div>
+                            <div class="notification-actions-page">
+                                <button class="action-btn mark-read" title="Oxunmuş et">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="action-btn delete" title="Sil">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More -->
+                <div class="load-more-notifications">
+                    <button class="btn btn-outline btn-large" id="loadMoreNotifications">
+                        <i class="fas fa-plus"></i>
+                        Daha çox bildirim yüklə
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">X</div>
+                        <span class="logo-text">Xəbərlər</span>
+                    </div>
+                    <p class="footer-description">Azərbaycanın aparıcı xəbər portalı. Etibarlı və operativ xəbər mənbəyiniz.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Kateqoriyalar</h3>
+                    <ul class="footer-links">
+                        <li><a href="category-technology.html">Texnologiya</a></li>
+                        <li><a href="category-economy.html">İqtisadiyyat</a></li>
+                        <li><a href="category-sports.html">İdman</a></li>
+                        <li><a href="category-culture.html">Mədəniyyət</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Şirkət</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="#">Komandamız</a></li>
+                        <li><a href="#">Karyera</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbər Bülleteni</h3>
+                    <p class="newsletter-description">Ən son xəbərləri e-poçt ünvanınıza göndərək</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-poçt ünvanınız" class="newsletter-input">
+                        <button class="btn btn-primary">Abunə ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Xəbərlər. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="notification-script.js"></script>
+</body>
+</html>

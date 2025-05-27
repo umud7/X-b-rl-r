@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İqtisadiyyat Xəbərləri - Xəbərlər</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="category-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">Xəbərlər</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                    <a href="news.html" class="nav-link">Xəbərlər</a>
+                    <a href="category-technology.html" class="nav-link">Texnologiya</a>
+                    <a href="category-economy.html" class="nav-link active">İqtisadiyyat</a>
+                    <a href="category-sports.html" class="nav-link">İdman</a>
+                    <a href="category-culture.html" class="nav-link">Mədəniyyət</a>
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                    <a href="contact.html" class="nav-link">Əlaqə</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <button class="icon-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Ana səhifə</a>
+            <a href="news.html" class="mobile-nav-link">Xəbərlər</a>
+            <a href="category-technology.html" class="mobile-nav-link">Texnologiya</a>
+            <a href="category-economy.html" class="mobile-nav-link">İqtisadiyyat</a>
+            <a href="category-sports.html" class="mobile-nav-link">İdman</a>
+            <a href="category-culture.html" class="mobile-nav-link">Mədəniyyət</a>
+            <a href="about.html" class="mobile-nav-link">Haqqımızda</a>
+            <a href="contact.html" class="mobile-nav-link">Əlaqə</a>
+        </div>
+    </header>
+
+    <!-- Category Hero -->
+    <section class="category-hero economy-hero">
+        <div class="container">
+            <div class="category-hero-content">
+                <div class="category-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h1 class="category-title">İqtisadiyyat</h1>
+                <p class="category-description">Maliyyə bazarları, investisiyalar və iqtisadi inkişaf haqqında analitik məqalələr</p>
+                <div class="category-stats">
+                    <span class="stat-item">
+                        <i class="fas fa-newspaper"></i>
+                        <span>203 məqalə</span>
+                    </span>
+                    <span class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span>1.8M baxış</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Indicators -->
+    <section class="economic-indicators">
+        <div class="container">
+            <h2 class="section-title">İqtisadi Göstəricilər</h2>
+            <div class="indicators-grid">
+                <div class="indicator-card">
+                    <div class="indicator-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="indicator-title">USD/AZN</h3>
+                    <span class="indicator-value">1.70</span>
+                    <span class="indicator-change positive">+0.02%</span>
+                </div>
+
+                <div class="indicator-card">
+                    <div class="indicator-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <h3 class="indicator-title">EUR/AZN</h3>
+                    <span class="indicator-value">1.85</span>
+                    <span class="indicator-change negative">-0.15%</span>
+                </div>
+
+                <div class="indicator-card">
+                    <div class="indicator-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3 class="indicator-title">Neft Qiyməti</h3>
+                    <span class="indicator-value">$82.45</span>
+                    <span class="indicator-change positive">+1.23%</span>
+                </div>
+
+                <div class="indicator-card">
+                    <div class="indicator-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="indicator-title">İnflyasiya</h3>
+                    <span class="indicator-value">2.8%</span>
+                    <span class="indicator-change neutral">0.00%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Seçilmiş Məqalə</h2>
+            <article class="featured-article">
+                <div class="featured-image">
+                    <img src="https://via.placeholder.com/800x400/10B981/FFFFFF?text=Economic+Growth" alt="İqtisadi Artım">
+                    <span class="featured-badge">Analitik</span>
+                </div>
+                <div class="featured-content">
+                    <span class="featured-category">İqtisadiyyat</span>
+                    <h3 class="featured-title">Azərbaycan iqtisadiyyatında diversifikasiya prosesi</h3>
+                    <p class="featured-excerpt">Ölkə iqtisadiyyatının neft sektorundan asılılığının azaldılması və qeyri-neft sektorunun inkişafı istiqamətində aparılan işlər öz nəticələrini verir. Yeni sahələrdə investisiya layihələri həyata keçirilir.</p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-user"></i> Prof. Leyla Həsənova</span>
+                        <span><i class="fas fa-calendar"></i> 2024-01-20</span>
+                        <span><i class="fas fa-clock"></i> 12 dəq</span>
+                    </div>
+                    <a href="article.html" class="btn btn-primary">Tam məqaləni oxu</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Economy News Grid -->
+    <section class="category-news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">İqtisadiyyat Xəbərləri</h2>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option value="latest">Ən yenilər</option>
+                        <option value="popular">Ən populyarlar</option>
+                        <option value="trending">Trend olanlar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="news-grid-large">
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/059669/FFFFFF?text=Banking" alt="Bank Sektoru">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Bank Sektoru</span>
+                            <span class="news-date">2024-01-19</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycan banklarında rəqəmsal transformasiya</h3>
+                        <p class="news-excerpt">Ölkə bankları müştərilərə daha keyfiyyətli xidmət göstərmək üçün rəqəmsal texnologiyaları fəal şəkildə tətbiq edirlər.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Rəşad Əliyev</span>
+                            <span><i class="fas fa-clock"></i> 7 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/0891B2/FFFFFF?text=Investment" alt="İnvestisiyalar">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">İnvestisiyalar</span>
+                            <span class="news-date">2024-01-18</span>
+                        </div>
+                        <h3 class="news-title">Xarici investisiyaların cəlb edilməsi sahəsində yeniliklər</h3>
+                        <p class="news-excerpt">Hökumət xarici investorlar üçün daha cəlbedici şərait yaratmaq məqsədilə bir sıra islahatlar həyata keçirir.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Günel Qasımova</span>
+                            <span><i class="fas fa-clock"></i> 6 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/7C3AED/FFFFFF?text=Startup" alt="Startaplar">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Startaplar</span>
+                            <span class="news-date">2024-01-17</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycanda startup ekosisteminin inkişafı</h3>
+                        <p class="news-excerpt">Gənc sahibkarlar üçün yaradılan dəstək proqramları və inkubatorlar ölkədə innovativ biznes mühitinin formalaşmasına kömək edir.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Orxan Bayramov</span>
+                            <span class="fas fa-clock"></i> 8 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/DC2626/FFFFFF?text=Trade" alt="Ticarət">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Beynəlxalq Ticarət</span>
+                            <span class="news-date">2024-01-16</span>
+                        </div>
+                        <h3 class="news-title">Azərbaycanın ixrac potensialının artırılması</h3>
+                        <p class="news-excerpt">Qeyri-neft məhsullarının ixracının stimullaşdırılması istiqamətində görülən tədbirlər öz nəticələrini verir.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Dr. Nigar Əhmədova</span>
+                            <span><i class="fas fa-clock"></i> 9 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/F59E0B/FFFFFF?text=Agriculture" alt="Kənd Təsərrüfatı">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Kənd Təsərrüfatı</span>
+                            <span class="news-date">2024-01-15</span>
+                        </div>
+                        <h3 class="news-title">Aqrar sektorda modernləşmə prosesi</h3>
+                        <p class="news-excerpt">Kənd təsərrüfatında müasir texnologiyaların tətbiqi və fermerlərin dəstəklənməsi sahəsində yeni layihələr həyata keçirilir.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Əli Məmmədov</span>
+                            <span><i class="fas fa-clock"></i> 5 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+
+                <article class="news-card-large">
+                    <div class="news-image">
+                        <img src="https://via.placeholder.com/400x300/16A34A/FFFFFF?text=Energy" alt="Enerji">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-header">
+                            <span class="news-category">Enerji Sektoru</span>
+                            <span class="news-date">2024-01-14</span>
+                        </div>
+                        <h3 class="news-title">Bərpa olunan enerji mənbələrinin inkişafı</h3>
+                        <p class="news-excerpt">Azərbaycan yaşıl enerji sahəsində böyük layihələr həyata keçirir və beynəlxalq əməkdaşlığı genişləndirir.</p>
+                        <div class="news-meta">
+                            <span><i class="fas fa-user"></i> Leyla Həsənova</span>
+                            <span><i class="fas fa-clock"></i> 10 dəq</span>
+                        </div>
+                        <a href="article.html" class="btn btn-primary">Məqaləni oxu</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more">
+                <button class="btn btn-outline btn-large">Daha çox məqalə yüklə</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Sectors -->
+    <section class="economic-sectors">
+        <div class="container">
+            <h2 class="section-title">İqtisadi Sektorlar</h2>
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="sector-title">Sənaye</h3>
+                    <p class="sector-description">İstehsal sektorunda ən son inkişaflar</p>
+                    <span class="sector-count">38 məqalə</span>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="sector-title">Kənd Təsərrüfatı</h3>
+                    <p class="sector-description">Aqrar sahədə innovasiyalar</p>
+                    <span class="sector-count">29 məqalə</span>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="sector-title">Turizm</h3>
+                    <p class="sector-description">Turizm sektorunun inkişafı</p>
+                    <span class="sector-count">25 məqalə</span>
+                </div>
+
+                <div class="sector-card">
+                    <div class="sector-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="sector-title">Maliyyə</h3>
+                    <p class="sector-description">Bank və maliyyə xidmətləri</p>
+                    <span class="sector-count">42 məqalə</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">X</div>
+                        <span class="logo-text">Xəbərlər</span>
+                    </div>
+                    <p class="footer-description">Azərbaycanın aparıcı xəbər portalı. Etibarlı və operativ xəbər mənbəyiniz.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Kateqoriyalar</h3>
+                    <ul class="footer-links">
+                        <li><a href="category-technology.html">Texnologiya</a></li>
+                        <li><a href="category-economy.html">İqtisadiyyat</a></li>
+                        <li><a href="category-sports.html">İdman</a></li>
+                        <li><a href="category-culture.html">Mədəniyyət</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Şirkət</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="#">Komandamız</a></li>
+                        <li><a href="#">Karyera</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbər Bülleteni</h3>
+                    <p class="newsletter-description">İqtisadiyyat xəbərlərini e-poçt ünvanınıza göndərək</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-poçt ünvanınız" class="newsletter-input">
+                        <button class="btn btn-primary">Abunə ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Xəbərlər. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
