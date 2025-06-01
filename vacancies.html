@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakansiyalar - Xəbərlər</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="staff-vacancies.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">Xəbərlər</span>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">Ana səhifə</a>
+                    <a href="news.html" class="nav-link">Xəbərlər</a>
+                    <a href="category-technology.html" class="nav-link">Texnologiya</a>
+                    <a href="category-economy.html" class="nav-link">İqtisadiyyat</a>
+                    <a href="category-sports.html" class="nav-link">İdman</a>
+                    <a href="category-culture.html" class="nav-link">Mədəniyyət</a>
+                    <a href="about.html" class="nav-link">Haqqımızda</a>
+                    <a href="contact.html" class="nav-link">Əlaqə</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-search"></i></button>
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <button class="icon-btn"><i class="fas fa-user"></i></button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Ana səhifə</a>
+            <a href="news.html" class="mobile-nav-link">Xəbərlər</a>
+            <a href="category-technology.html" class="mobile-nav-link">Texnologiya</a>
+            <a href="category-economy.html" class="mobile-nav-link">İqtisadiyyat</a>
+            <a href="category-sports.html" class="mobile-nav-link">İdman</a>
+            <a href="category-culture.html" class="mobile-nav-link">Mədəniyyət</a>
+            <a href="about.html" class="mobile-nav-link">Haqqımızda</a>
+            <a href="contact.html" class="mobile-nav-link">Əlaqə</a>
+        </div>
+    </header>
+
+    <!-- Vacancies Page -->
+    <main class="vacancies-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Ana səhifə</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span>Vakansiyalar</span>
+                </div>
+                <h1 class="page-title">Vakansiyalar</h1>
+                <p class="page-description">Xəbərlər portalında karyeranızı qurun və peşəkar komandamızın bir hissəsi olun</p>
+            </div>
+
+            <!-- Why Join Us -->
+            <section class="why-join-section">
+                <div class="why-join-content">
+                    <div class="why-join-text">
+                        <h2>Niyə Bizimlə Çalışmalısınız?</h2>
+                        <p>Xəbərlər portalı olaraq əməkdaşlarımızın inkişafına və rifahına böyük əhəmiyyət veririk. Bizimlə çalışmağın üstünlükləri:</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i> Peşəkar inkişaf imkanları</li>
+                            <li><i class="fas fa-check-circle"></i> Rəqabətqabiliyyətli əmək haqqı</li>
+                            <li><i class="fas fa-check-circle"></i> Tibbi sığorta</li>
+                            <li><i class="fas fa-check-circle"></i> Çevik iş qrafiki</li>
+                            <li><i class="fas fa-check-circle"></i> Karyera yüksəlişi</li>
+                            <li><i class="fas fa-check-circle"></i> Beynəlxalq təcrübə mübadiləsi</li>
+                            <li><i class="fas fa-check-circle"></i> Müasir ofis mühiti</li>
+                            <li><i class="fas fa-check-circle"></i> Korporativ tədbirlər</li>
+                        </ul>
+                    </div>
+                    <div class="why-join-image">
+                        <img src="https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Join+Our+Team" alt="Bizimlə Çalışın">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Open Positions -->
+            <section class="open-positions-section">
+                <h2 class="section-title">Açıq Vakansiyalar</h2>
+                
+                <div class="positions-filter">
+                    <button class="filter-btn active" data-filter="all">Hamısı</button>
+                    <button class="filter-btn" data-filter="editorial">Redaksiya</button>
+                    <button class="filter-btn" data-filter="technical">Texniki</button>
+                    <button class="filter-btn" data-filter="marketing">Marketinq</button>
+                    <button class="filter-btn" data-filter="administrative">İnzibati</button>
+                </div>
+
+                <div class="positions-list">
+                    <!-- Editorial Positions -->
+                    <div class="position-card" data-category="editorial">
+                        <div class="position-header">
+                            <h3 class="position-title">İdman Redaktoru</h3>
+                            <span class="position-type full-time">Tam ştat</span>
+                        </div>
+                        <div class="position-details">
+                            <div class="position-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bakı</span>
+                                <span><i class="fas fa-clock"></i> Tam iş günü</span>
+                                <span><i class="fas fa-calendar-alt"></i> 25.01.2024</span>
+                            </div>
+                            <p class="position-description">İdman xəbərlərinin hazırlanması, redaktə edilməsi və nəşri üçün təcrübəli redaktor axtarırıq. Namizəd idman sahəsində geniş biliyə və jurnalistika təcrübəsinə malik olmalıdır.</p>
+                            <div class="position-requirements">
+                                <h4>Tələblər:</h4>
+                                <ul>
+                                    <li>Jurnalistika və ya müvafiq sahədə ali təhsil</li>
+                                    <li>Ən azı 3 il idman jurnalistikası təcrübəsi</li>
+                                    <li>Azərbaycan və ingilis dillərində sərbəst yazı bacarığı</li>
+                                    <li>Qısa müddətdə keyfiyyətli məzmun yaratmaq qabiliyyəti</li>
+                                    <li>Komanda işi və liderlik bacarıqları</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary position-apply-btn" data-position="İdman Redaktoru">Müraciət et</a>
+                        </div>
+                    </div>
+
+                    <div class="position-card" data-category="editorial">
+                        <div class="position-header">
+                            <h3 class="position-title">Texnologiya Müxbiri</h3>
+                            <span class="position-type full-time">Tam ştat</span>
+                        </div>
+                        <div class="position-details">
+                            <div class="position-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bakı</span>
+                                <span><i class="fas fa-clock"></i> Tam iş günü</span>
+                                <span><i class="fas fa-calendar-alt"></i> 22.01.2024</span>
+                            </div>
+                            <p class="position-description">Texnologiya sahəsində xəbərlərin hazırlanması üçün müxbir axtarırıq. Namizəd texnologiya trendlərini izləməli və bu sahədə analitik məqalələr hazırlamaq qabiliyyətinə malik olmalıdır.</p>
+                            <div class="position-requirements">
+                                <h4>Tələblər:</h4>
+                                <ul>
+                                    <li>Jurnalistika, texnologiya və ya müvafiq sahədə təhsil</li>
+                                    <li>Texnologiya sahəsində geniş biliklər</li>
+                                    <li>Azərbaycan və ingilis dillərində sərbəst yazı bacarığı</li>
+                                    <li>Müsahibə və reportaj hazırlamaq təcrübəsi</li>
+                                    <li>Sosial media platformalarında aktiv olmaq</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary position-apply-btn" data-position="Texnologiya Müxbiri">Müraciət et</a>
+                        </div>
+                    </div>
+
+                    <!-- Technical Positions -->
+                    <div class="position-card" data-category="technical">
+                        <div class="position-header">
+                            <h3 class="position-title">Frontend Developer</h3>
+                            <span class="position-type full-time">Tam ştat</span>
+                        </div>
+                        <div class="position-details">
+                            <div class="position-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bakı</span>
+                                <span><i class="fas fa-clock"></i> Tam iş günü</span>
+                                <span><i class="fas fa-calendar-alt"></i> 20.01.2024</span>
+                            </div>
+                            <p class="position-description">Xəbərlər portalının istifadəçi interfeysi üzərində işləmək üçün təcrübəli Frontend Developer axtarırıq. Namizəd müasir veb texnologiyalarını bilməli və istifadəçi təcrübəsini yaxşılaşdırmaq üçün həllər təklif etməlidir.</p>
+                            <div class="position-requirements">
+                                <h4>Tələblər:</h4>
+                                <ul>
+                                    <li>HTML, CSS, JavaScript üzrə dərin biliklər</li>
+                                    <li>React, Vue və ya Angular kimi framework təcrübəsi</li>
+                                    <li>Responsive dizayn prinsipləri</li>
+                                    <li>Git versiya idarəetmə sistemi ilə iş təcrübəsi</li>
+                                    <li>UX/UI prinsipləri haqqında biliklər</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary position-apply-btn" data-position="Frontend Developer">Müraciət et</a>
+                        </div>
+                    </div>
+
+                    <div class="position-card" data-category="technical">
+                        <div class="position-header">
+                            <h3 class="position-title">Backend Developer</h3>
+                            <span class="position-type full-time">Tam ştat</span>
+                        </div>
+                        <div class="position-details">
+                            <div class="position-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bakı</span>
+                                <span><i class="fas fa-clock"></i> Tam iş günü</span>
+                                <span><i class="fas fa-calendar-alt"></i> 18.01.2024</span>
+                            </div>
+                            <p class="position-description">Xəbərlər portalının server tərəfini inkişaf etdirmək üçün Backend Developer axtarırıq. Namizəd yüksək yüklənmə şəraitində işləyən sistemlər qurmaq təcrübəsinə malik olmalıdır.</p>
+                            <div class="position-requirements">
+                                <h4>Tələblər:</h4>
+                                <ul>
+                                    <li>Node.js, PHP, Python və ya Java üzrə təcrübə</li>
+                                    <li>SQL və NoSQL verilənlər bazaları ilə iş təcrübəsi</li>
+                                    <li>RESTful API dizayn prinsipləri</li>
+                                    <li>Təhlükəsizlik prinsipləri və performans optimallaşdırması</li>
+                                    <li>CI/CD prosesləri haqqında biliklər</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary position-apply-btn" data-position="Backend Developer">Müraciət et</a>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Positions -->
+                    <div class="position-card" data-category="marketing">
+                        <div class="position-header">
+                            <h3 class="position-title">Sosial Media Meneceri</h3>
+                            <span class="position-type full-time">Tam ştat</span>
+                        </div>
+                        <div class="position-details">
+                            <div class="position-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bakı</span>
+                                <span><i class="fas fa-clock"></i> Tam iş günü</span>
+                                <span><i class="fas fa-calendar-alt"></i> 15.01.2024</span>
+                            </div>
+                            <p class="position-description">Xəbərlər portalının sosial media hesablarını idarə etmək üçün təcrübəli menecer axtarırıq. Namizəd sosial media trendlərini izləməli və auditoriya ilə effektiv ünsiyyət qurmalıdır.</p>
+                            <div class="position-requirements">
+                                <h4>Tələblər:</h4>
+                                <ul>
+                                    <li>Sosial media platformalarında (Facebook, Instagram, Twitter, LinkedIn) iş təcrübəsi</li>
+                                    <li>Kontentlərin hazırlanması və planlaşdırılması bacarığı</li>
+                                    <li>Sosial media analitikası və hesabat hazırlama bacarığı</li>
+                                    <li>Qrafik dizayn proqramları ilə iş təcrübəsi</li>
+                                    <li>Krizis kommunikasiyası bacarıqları</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary position-apply-btn" data-position="Sosial Media Meneceri">Müraciət et</a>
+                        </div>
+                    </div>
+
+                    <!-- Administrative Positions -->
+                    <div class="position-card" data-category="administrative">
+                        <div class="position-header">
+                            <h3 class="position-title">İnsan Resursları Mütəxəssisi</h3>
+                            <span class="position-type part-time">Yarım ştat</span>
+                        </div>
+                        <div class="position-details">
+                            <div class="position-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Bakı</span>
+                                <span><i class="fas fa-clock"></i> Yarım iş günü</span>
+                                <span><i class="fas fa-calendar-alt"></i> 12.01.2024</span>
+                            </div>
+                            <p class="position-description">İşə qəbul, işçilərin inkişafı və kadr sənədləşməsi üzrə təcrübəli İR mütəxəssisi axtarırıq. Namizəd müasir İR praktikalarını bilməli və komandanın inkişafına töhfə verməlidir.</p>
+                            <div class="position-requirements">
+                                <h4>Tələblər:</h4>
+                                <ul>
+                                    <li>İnsan resursları sahəsində ən azı 2 il təcrübə</li>
+                                    <li>İşə qəbul və müsahibə proseslərinin təşkili bacarığı</li>
+                                    <li>Əmək qanunvericiliyi haqqında biliklər</li>
+                                    <li>Təlim və inkişaf proqramlarının təşkili təcrübəsi</li>
+                                    <li>Mükəmməl ünsiyyət və təşkilati bacarıqlar</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-primary position-apply-btn" data-position="İnsan Resursları Mütəxəssisi">Müraciət et</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Application Form -->
+            <section class="application-form-section" id="applicationForm" style="display: none;">
+                <h2 class="section-title">İş Üçün Müraciət</h2>
+                <p class="section-description"><span id="positionTitle">Vakansiya</span> vəzifəsi üçün müraciət formu</p>
+                
+                <form class="application-form" id="jobApplicationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Ad və Soyad *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-poçt *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Yaşayış yeri *</label>
+                            <input type="text" id="location" name="location" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Təhsil *</label>
+                        <input type="text" id="education" name="education" placeholder="Təhsil müəssisəsi, ixtisas, illər" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">İş təcrübəsi *</label>
+                        <textarea id="experience" name="experience" rows="4" placeholder="Əvvəlki iş yerləriniz və vəzifələriniz haqqında məlumat" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Bacarıqlar *</label>
+                        <textarea id="skills" name="skills" rows="3" placeholder="Peşəkar bacarıqlarınız" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">Motivasiya məktubu *</label>
+                        <textarea id="motivation" name="motivation" rows="5" placeholder="Niyə bizimlə işləmək istəyirsiniz?" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cv">CV yükləyin (PDF, DOC) *</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkmark"></span>
+                            Şəxsi məlumatlarımın emal edilməsinə razılıq verirəm
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" id="cancelApplication">Ləğv et</button>
+                        <button type="submit" class="btn btn-primary">Müraciət et</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">X</div>
+                        <span class="logo-text">Xəbərlər</span>
+                    </div>
+                    <p class="footer-description">Azərbaycanın aparıcı xəbər portalı. Etibarlı və operativ xəbər mənbəyiniz.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Kateqoriyalar</h3>
+                    <ul class="footer-links">
+                        <li><a href="category-technology.html">Texnologiya</a></li>
+                        <li><a href="category-economy.html">İqtisadiyyat</a></li>
+                        <li><a href="category-sports.html">İdman</a></li>
+                        <li><a href="category-culture.html">Mədəniyyət</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Şirkət</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="staff.html">Komandamız</a></li>
+                        <li><a href="vacancies.html">Karyera</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Xəbər Bülleteni</h3>
+                    <p class="newsletter-description">Ən son xəbərləri e-poçt ünvanınıza göndərək</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="E-poçt ünvanınız" class="newsletter-input">
+                        <button class="btn btn-primary">Abunə ol</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Xəbərlər. Bütün hüquqlar qorunur.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="vacancies.js"></script>
+</body>
+</html>
